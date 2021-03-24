@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pinterest/src/pages/emergency_page.dart';
-import 'package:pinterest/src/pages/pinterest_page.dart';
+import 'package:pinterest/src/pages/launcher_page.dart';
+// import 'package:pinterest/src/pages/emergency_page.dart';
+// import 'package:pinterest/src/pages/pinterest_page.dart';
 // import 'package:pinterest/src/pages/pinterest_page.dart';
 // import 'package:pinterest/src/widgets/pinteres_menu.dart';
 // import 'package:pinterest/src/pages/slideshow_page.dart';
@@ -16,6 +17,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'App desing',
-        home: EmergencyPage());
+        home: LauncherPage());
   }
 }

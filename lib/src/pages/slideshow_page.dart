@@ -9,7 +9,7 @@ class SlidesShowPage extends StatelessWidget {
         body: Column(
       children: [
         Expanded(child: _MySlideShow()),
-        Expanded(child: _MySlideShow())
+        Expanded(child: _MySlideShow()),
       ],
     ));
   }

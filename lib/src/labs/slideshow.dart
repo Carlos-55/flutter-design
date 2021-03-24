@@ -12,7 +12,10 @@ class SlideShowPage extends StatelessWidget {
       create: (_) => new SliderModel(),
       child: Scaffold(
         body: Column(
-          children: [Expanded(child: _Slides()), _DotsDown()],
+          children: [
+            Expanded(child: _Slides()),
+            _DotsDown(),
+          ],
         ),
       ),
     );

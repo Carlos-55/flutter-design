@@ -102,6 +102,18 @@ class _HeaderWithButton extends StatelessWidget {
                 FontAwesomeIcons.ellipsisV,
                 color: Colors.white,
               )),
+        ),
+        SafeArea(
+          child: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+              size: 30,
+            ),
+          ),
         )
       ],
     );

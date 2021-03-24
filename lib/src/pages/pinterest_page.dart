@@ -13,6 +13,18 @@ class PinterestPage extends StatelessWidget {
         children: [
           PinterestGrid(),
           _PinterestMenuLocation(),
+          SafeArea(
+            child: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(
+                Icons.arrow_back,
+                color: Colors.white,
+                size: 30,
+              ),
+            ),
+          )
         ],
       )),
     );
