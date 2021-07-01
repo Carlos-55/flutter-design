@@ -44,9 +44,9 @@ class _PinterestMenuLocation extends StatelessWidget {
         child: Align(
           child: PinterestMenu(
               viewMenu: view,
-              activeColor: Colors.red,
-              inactiveColor: Colors.white,
-              backgroundColor: Colors.grey[900],
+              activeColor: Colors.green,
+              inactiveColor: Colors.black,
+              backgroundColor: Colors.white,
               items: [
                 PinterestButton(
                     icon: Icons.pie_chart,
