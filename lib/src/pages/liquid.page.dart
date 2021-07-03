@@ -133,29 +133,6 @@ class LiquidPages extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            color: Colors.yellowAccent,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                GestureDetector(
-                  child: Image.asset(
-                    'assets/img/imagen3.jpg',
-                    fit: BoxFit.cover,
-                    height: MediaQuery.of(context).size.height / 2,
-                    width: MediaQuery.of(context).size.width,
-                  ),
-                  onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (_) {
-                      dataImage(context, 'assets/img/imagen3.jpg');
-                    }));
-                  },
-                )
-              ],
-            ),
-          ),
         ],
       ),
     );
@@ -174,20 +151,5 @@ class LiquidPages extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  void dataImage(BuildContext context, String url) async {
-    // await Future.delayed(Duration(seconds: 2), () {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (ctx) => Scaffold(
-          body: Center(
-            child: Image.asset(url),
-          ),
-        ),
-      ),
-    );
-    // });
   }
 }
